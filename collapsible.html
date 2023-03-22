@@ -13,9 +13,32 @@
         
       }
     </style>
-    </head>
-    <body>
-<div class="slider" style="height: 640px;">
+</head>
+<body>
+    <!--    NAVBAR  -->
+    <section>
+      <nav>
+        <div class="nav-wrapper black">
+          <a href="#!" class="brand-logo log" style="font-family: Times New Roman, Times, serif;"><b>LoV</b></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Home</a></li>
+            <li><a href="badges.html">Products</a></li>
+            <li><a href="collapsible.html">About</a></li>
+            <li><a href="mobile.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Products</a></li>
+        <li><a href="collapsible.html">About</a></li>
+        <li><a href="mobile.html">Contact Us</a></li>
+      </ul>
+  </section>
+    <!--    Slider  -->
+    <div class="slider" style="height: 640px;">
         <ul class="slides" style="height: 600px;">
           <li>
             <img src="../static/img/bg.jpg"> <!-- random image -->
@@ -47,4 +70,43 @@
           </li>
         </ul>
       </div>
-    </body>
+<!--  Footer  -->
+
+      <footer class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Lord of Vapes</h5>
+              <p class="grey-text text-lighten-4">Get ready to experience the ultimate vaping journey with The Lord of Vapes! From starter kits to disposables, you'll find everything you need for a superior vaping experience. Our selection of vaporizers come in various shapes and sizes and are made with the highest quality materials, so you can be sure you're getting a top-notch product. Enjoy amazing flavors and convenience with The Lord of Vapes!</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Online Handles</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Snapchat</a></li>
+                <!-- <li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2023 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+<script>
+    $(document).ready(function(){
+ 	$('.sidenav').sidenav();
+    $('.slider').slider();
+ 	});
+
+</script>
+
+</body>
+</html>
