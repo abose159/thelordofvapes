@@ -6,23 +6,29 @@
     <title>Inventory | Lord of Vapes</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
     /* CSS for product cards */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     .product-card {
       border: 1px solid #ccc;
       padding: 10px;
-      margin: 10px;
-      width: 200px;
+      margin-bottom: 20px;
+      width: calc(25% - 30px);
       text-align: center;
       font-family: 'Roboto', sans-serif;
       background-color: #f8f8f8;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
-        .product-card:hover {
+
+    .product-card:hover {
       transform: translateY(-5px);
     }
 
@@ -66,7 +72,21 @@
     .buy-now-button:hover {
       background-color: #0056b3;
     }
-    </style>
+
+    /* Media queries */
+    @media screen and (max-width: 768px) {
+      .product-card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .product-card {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--    NAVBAR  -->
